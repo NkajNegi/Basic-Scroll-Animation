@@ -1,0 +1,104 @@
+html,
+body {
+  margin: 0;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  height: 300vh;
+}
+
+.track {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a8a8a;
+  overflow: hidden;
+}
+
+.main-ani {
+  width: 100vw;
+  height: 200px;
+  background-color: #111;
+  position: relative;
+}
+
+.car {
+  height: 200px;
+  position: absolute;
+  left: -10%;
+  z-index: 10;
+  transform: rotate(180deg);
+}
+
+.trail {
+  height: 200px;
+  background: #45db7d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+}
+
+.text-box {
+  box-sizing: border-box;
+  opacity: 0;
+  position: absolute;
+  padding: 30px 30px;
+  width: 18rem;
+  height: 13rem;
+  z-index: 5;
+  color: #000;
+  border-radius: 10px;
+}
+
+.box-primary {
+  background-color: #def54f;
+  top: 10%;
+  left: 10%;
+}
+.box-secondary {
+  background-color: #2c2c2c;
+  bottom: 10%;
+  left: 15%;
+  color: #fff;
+}
+.box-tertiary {
+  background-color: #0156af;
+  top: 10%;
+  right: 10%;
+  color: #fff;
+}
+.box-quaternary {
+  background-color: #f48021;
+  bottom: 10%;
+  right: 15%;
+}
+
+.value-add {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1); /* Faded out initially */
+  display: flex;
+  pointer-events: none;
+}
+
+.letter {
+  opacity: 0.2;
+}
